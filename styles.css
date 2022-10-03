@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --title: #fffcf9;
+  --subtitle: #b3b3b3;
+  --bg-button: #e9e6e3;
+  --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
+  font-size: 62.5%;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  text-align: center;
+
+  background-image: var(--background);
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  color: var(--title);
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: min(390px, 100%);
+  padding-inline: 3rem;
+  margin-inline: auto;
+}
+
+.contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.header {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.header .logo {
+  width: 9rem;
+}
+
+.header h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.movie {
+  margin-bottom: 3rem;
+}
+
+.movie .poster {
+  width: 17rem;
+}
+
+.movie span {
+  display: block;
+  margin-bottom: 2rem;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.movie p {
+  font-size: 16px;
+  font-weight: 400;
+
+  max-width: 31.6rem;
+}
+
+.button {
+  margin-bottom: 3rem;
+}
+
+.button img {
+  width: 3.5rem;
+}
+
+.button button {
+  height: 4.7rem;
+
+  margin-inline: auto;
+  padding: 1.4rem 1.6rem;
+
+  display: flex;
+  align-items: center;
+
+  gap: 1.6rem;
+
+  border: 2px solid #1a1a1a;
+  border-radius: 5px;
+
+  background-color: var(--bg-button);
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 12px;
+  font-weight: 400;
+
+  margin-bottom: 10rem;
+}
+
+@media (min-width: 1000px) {
+  body {
+    min-height: 100%;
+  }
+
+  .container {
+    width: min(688px, 100%);
+    padding-inline: 3rem;
+    margin-inline: auto;
+  }
+
+  .header {
+    margin-top: 12rem;
+    margin-bottom: 3rem;
+  }
+
+  .movie {
+    flex-direction: row;
+
+    text-align: start;
+  }
+
+ 
+
+  .movie p {
+    max-width: 42.3rem;
+  }
+
+  .subtitle {
+    max-width: 38.1rem;
+    margin-inline: auto;
+
+    font-size: 14px;
+  }
+}
